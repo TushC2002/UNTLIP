@@ -1,3 +1,12 @@
+function updateDate() {
+    var currentDate = new Date();
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    var formattedDate = currentDate.toLocaleDateString('en-US', options);
+    $('#current-date').text(formattedDate);
+}
+
+updateDate();
+
 function loadContent(url, containerId) {
     $.get(url, function(data) {
         $(`#${containerId}`).html(data);
