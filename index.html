@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Design</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <div class="sidebar bg-white border-right">
+        <div class="logo text-center py-3">
+            <img src="images/logo.png" alt="">
+            <p class="ml-2 mb-0">Untlip</p>
+        </div>
+        <ul class="menu list-unstyled">
+            <li>
+                <a href="dashboard.html" class="d-block py-2 pl-3"data-target="dynamicContent" >
+                    <i class="fas fa-tachometer-alt mr-2"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="orders.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                    <i class="fas fa-shopping-cart mr-2"></i> <!-- Changed to shopping cart icon -->
+                    <span>Orders</span>
+                </a>
+            </li>
+            <li>
+                <a href="clients.html" class="d-block py-2 pl-3" >
+                    <i class="fas fa-users mr-2"></i> <!-- Changed to users icon -->
+                    <span>Clients</span>
+                </a>
+            </li>
+            <li>
+                <a href="statistics" class="d-block py-2 pl-3">
+                    <i class="fas fa-chart-bar mr-2"></i>
+                    <span>Statistics</span>
+                </a>
+            </li>
+            <li>
+                <a href="finance" class="d-block py-2 pl-3">
+                    <i class="fas fa-money-bill mr-2"></i> 
+                    <span>Finance</span>
+                </a>
+            </li>
+            <li>
+                <a href="faq" class="d-block py-2 pl-3" >
+                    <i class="fas fa-question-circle mr-2"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="#support" class="d-block py-2 pl-3">
+                    <i class="fas fa-headset mr-2"></i> 
+                    <span>Support</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#logout" class="d-block py-2 pl-3">
+                    <i class="fas fa-sign-out-alt mr-2"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+        <div class="upgrade-section">
+            <div class="logo text-center py-3">
+                <img src="images/boy.png" alt="">
+            </div>
+            <div class="logo text-center py-3">
+                <a href="#" class="d-block" data-tab="logo">
+                    <span>Upgrade</span><br>
+                    <span>your plans<i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            
+                <div class="header--wrapper">
+                    <div class="header--title">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>October 19, 2021</span>
+                    </div>
+                    <div class="user--info">
+                        <div class="search--box">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <i class="fas fa-bell"></i> 
+                        <span>|</span>
+                        <img src="images/profile.png" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="row" id="dynamicContent">
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

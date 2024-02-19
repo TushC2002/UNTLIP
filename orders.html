@@ -1,0 +1,125 @@
+
+<link rel="stylesheet" href="css/style.css">
+
+<div class="col-12 main--content bg-white" >
+    <div class="container mt-5">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand bold" href="#"> <h2>Orders😍</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item" >
+                        <a class="nav-link active" href="#">Daily</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Monthly</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                
+                <div class="card light-blue">
+                    <div class="card-header">New Orders</div>
+                    <div class="card-body">
+                        <p><span>245</span>     | Impression - 20%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                
+                <div class="card light-purple">
+                    <div class="card-header">Delivered Orders</div>
+                    <div class="card-body">
+                        <p><span>123</span>     | Impression - 11%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                
+                <div class="card light-orange">
+                    <div class="card-header">Pending Orders</div>
+                    <div class="card-body">
+                        <p><span>150</span>     | Impression - 18%</p>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+    </div>
+    
+    
+    <div class="container mt-5">
+        
+        <ul class="nav nav-tabs justify-content-between">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#allOrdersTab">All Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  data-toggle="tab" href="#pendingOrdersTab">Pending Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#deliveredOrdersTab">Delivered Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bookedOrdersTab">Booked Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#cancelledOrdersTab">Cancelled Orders</a>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+            
+            <div id="allOrdersTab" class="tab-pane">
+                
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-id-card"></i> Order ID</th>
+                            <th><i class="far fa-calendar-alt"></i> Ordered Date</th>
+                            <th><i class="fas fa-box"></i> Product Name</th>
+                            <th><i class="fas fa-dollar-sign"></i> Product Price</th>
+                            <th><i class="fas fa-check-circle"></i> Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#789245</td>
+                            <td>14-12-2020</td>
+                            <td>Decorative box</td>
+                            <td>120 USD</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>#123245</td>
+                            <td>12-12-2020</td>
+                            <td>Camera film</td>
+                            <td>156 USD</td>
+                            <td>Cancelled</td>
+                        </tr>
+                        <tr>
+                            <td>#273245</td>
+                            <td>11-11-2020</td>
+                            <td>Decorative box</td>
+                            <td>125 USD</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</div>
