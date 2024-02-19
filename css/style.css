@@ -369,3 +369,80 @@ body {
     transform: scaleX(1.05);
     transition: transform 0.3s ease;
 }
+
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%; 
+        padding: 0 1rem; 
+        height: auto; 
+    }
+
+    .logo {
+        padding: 10px 16px; 
+    }
+
+    .menu li {
+        padding: 0.5rem; 
+        margin: 0.25rem 0; 
+    }
+
+    .upgrade-section .logo img {
+        height: 150px; 
+        margin-bottom: 20px; 
+    }
+
+    .menu a {
+        font-size: 12px; 
+    }
+
+    .header--title {
+        font-size: 16px; 
+    }
+
+    .search--box {
+        padding: 2px 4px; 
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 10px; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sidebar {
+        width: 250px; 
+    }
+
+    .header--title {
+        font-size: 18px; 
+    }
+
+    .search--box {
+        padding: 4px 8px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 11px; 
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .sidebar {
+        width: 300px; 
+    }
+
+    .header--title {
+        font-size: 20px; 
+    }
+
+    .search--box {
+        padding: 6px 12px; 
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px; 
+    }
+}
