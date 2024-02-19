@@ -113,12 +113,12 @@ body {
 
 
 .upgrade-section a {
-    color: #333;
+    color:black;
     text-decoration: none;
 }
 
 .upgrade-section a:hover {
-    color: #555;
+    color:blue;
 }
 
 
@@ -313,6 +313,11 @@ body {
     color: darkblue; 
     font-size: 30px;
 }
+.card-body i {
+    color:green; /* Change icon color */
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
 .card.light-purple .card-body p span {
     color: darkpurple; 
     font-size: 30px;
@@ -320,6 +325,9 @@ body {
 .card.light-orange .card-body p span {
     color: darkorange; 
     font-size: 30px;
+}
+.card.light-orange i{
+    color: red;
 }
 
 
