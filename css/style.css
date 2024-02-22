@@ -22,6 +22,7 @@ body {
     width: 300px;
     height: 100vh;
     padding: 0 1.7rem;
+    z-index: 1000;
 }
 
 
@@ -133,13 +134,7 @@ body {
     padding: 20px 16px;
 }
 
-.main--content {
-    position: relative;
-    width: 100%;
-    padding:5px;
-    background-color:white; 
-    border-radius: 10px; 
-}
+
 
 .header--title {
     color: rgba(113, 99, 186, 255);
@@ -189,6 +184,52 @@ body {
     border-radius: 50%;
 }
 
+.profile-dropdown {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 9999; /* Increase z-index */
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+
+.profile-details {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+
+}
+.profile-details img{
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.profile-actions {
+    padding: 10px;
+}
+
+.profile-actions a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.profile-actions a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
 .navbar {
     background-color: transparent;
     border: none;
@@ -200,19 +241,28 @@ body {
 }
 
 .navbar-toggler {
-    border: none;
+    border:none;
+    
 }
 
 
-.nav-link.active {
-    font-weight: bold;
+.navbar-nav .nav-link {
+    border: 1px solid transparent;
+    border-color: #333; 
+}
+
+.navbar-nav .nav-link.active {
     background-color: white;
-    color: black;
+    color: black; 
+    border-color: black;
 }
 
-.nav-link{
-    color: black;
+.navbar-nav .nav-link:not(.active) {
+    background-color: grey;
+    color: white; 
+    border-color: grey; 
 }
+
 
 .navbar-toggler-icon {
     border: none;
@@ -229,18 +279,13 @@ body {
 
     
 }
-.navbar-nav .nav-link:hover {
-    background-color: white;
-    
-}
 
 
 .navbar-nav .nav-link {
     font-size: 12px;
-    border-radius: 7px;
+    border-radius: 10px;
     
 }
-
 
 
 .main--content {
@@ -253,13 +298,18 @@ body {
 
 .container mt-5{
     justify-content: space-between;
-    display: flex;
+    display: flex;   
 }
 .card {
     border: none; 
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card-header {
@@ -379,78 +429,4 @@ body {
 }
 
 
-@media (max-width: 767px) {
-    .sidebar {
-        width: 100%; 
-        padding: 0 1rem; 
-        height: auto; 
-    }
 
-    .logo {
-        padding: 10px 16px; 
-    }
-
-    .menu li {
-        padding: 0.5rem; 
-        margin: 0.25rem 0; 
-    }
-
-    .upgrade-section .logo img {
-        height: 150px; 
-        margin-bottom: 20px; 
-    }
-
-    .menu a {
-        font-size: 12px; 
-    }
-
-    .header--title {
-        font-size: 16px; 
-    }
-
-    .search--box {
-        padding: 2px 4px; 
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 10px; 
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .sidebar {
-        width: 250px; 
-    }
-
-    .header--title {
-        font-size: 18px; 
-    }
-
-    .search--box {
-        padding: 4px 8px;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 11px; 
-    }
-}
-
-
-@media (min-width: 1024px) {
-    .sidebar {
-        width: 300px; 
-    }
-
-    .header--title {
-        font-size: 20px; 
-    }
-
-    .search--box {
-        padding: 6px 12px; 
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 12px; 
-    }
-}
