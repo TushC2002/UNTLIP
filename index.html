@@ -1,130 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Design</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    
-    <div class="sidebar bg-white border-right">
-        <div class="logo text-center py-3">
-            <img src="images/logo.png" alt="">
-            <p class="ml-2 mb-0">Untlip</p>
-        </div>
-        
-        <ul class="menu list-unstyled">
-            <li>
-                <a href="dashboard.html" class="d-block py-2 pl-3"data-target="dynamicContent" >
-                    <i class="fas fa-tachometer-alt mr-2"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="orders.html" class="d-block py-2 pl-3" data-target="dynamicContent">
-                    <i class="fas fa-shopping-cart mr-2"></i> <!-- Changed to shopping cart icon -->
-                    <span>Orders</span>
-                </a>
-            </li>
-            <li>
-                <a href="clients.html" class="d-block py-2 pl-3" data-target="dynamicContent" >
-                    <i class="fas fa-users mr-2"></i> <!-- Changed to users icon -->
-                    <span>Clients</span>
-                </a>
-            </li>
-            <li>
-                <a href="statistics.html" class="d-block py-2 pl-3" data-target="dynamicContent">
-                    <i class="fas fa-chart-bar mr-2"></i>
-                    <span>Statistics</span>
-                </a>
-            </li>
-            <li>
-                <a href="finance.html" class="d-block py-2 pl-3" data-target="dynamicContent">
-                    <i class="fas fa-money-bill mr-2"></i> 
-                    <span>Finance</span>
-                </a>
-            </li>
-            <li>
-                <a href="faq.html" class="d-block py-2 pl-3" data-target="dynamicContent">
-                    <i class="fas fa-question-circle mr-2"></i>
-                    <span>FAQ</span>
-                </a>
-            </li>
-            <li>
-                <a href="support.html" class="d-block py-2 pl-3" data-target="dynamicContent">
-                    <i class="fas fa-headset mr-2"></i> 
-                    <span>Support</span>
-                </a>
-            </li>
-        </ul>
-        <div class="upgrade-section">
-            <div class="logo text-center py-3">
-                <img src="images/boy.png" alt="">
-            </div>
-            <div class="logo text-center py-3">
-                <a href="#" class="d-block" data-tab="logo">
-                    <span>Upgrade</span><br>
-                    <span>your plans<i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </div>
-    </div>
-
     <div class="container-fluid">
         <div class="row">
-            <div class="header--wrapper">
-                <div class="header--title">
-                    <i class="far fa-calendar-alt"></i>
-                    <span id="current-date"></span>
-                </div>
-                <div class="user--info">
-                    <div class="search--box">
-                        <i class="fa-solid fa-search"></i>
-                        <input type="text" placeholder="Search">
+            <div class="col-lg-3 col-md-4 d-none d-md-block ">
+                <div class="sidebar bg-white border-right" id="sidebarNav">
+                    <div class="logo text-center py-3">
+                        <img src="images/logo.png" alt="">
+                        <p class="ml-2 mb-0">Untlip</p>
                     </div>
-                    <i class="fas fa-bell"></i> 
-                    <span>|</span>
-                    <div class="profile-toggle">
-                        <img src="images/profile.png" alt="" id="profile-toggle">
-                        <div class="profile-dropdown" id="profile-dropdown">
-                            <div class="profile-details">
-                                <img src="images/profile.png" alt="">
-                                <p>Tushar Chaudhari</p>
-                            </div>
-                            <div class="profile-actions">
-                                <a href="#" id="view-profile"><i class="fas fa-user-circle"></i> View Profile</a>
-                                <a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    <ul class="menu list-unstyled">
+                        <li>
+                            <a href="dashboard.html" class="d-block py-2 pl-3"data-target="dynamicContent" >
+                                <i class="fas fa-tachometer-alt mr-2"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="orders.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                <i class="fas fa-shopping-cart mr-2"></i> 
+                                <span>Orders</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="clients.html" class="d-block py-2 pl-3" data-target="dynamicContent" >
+                                <i class="fas fa-users mr-2"></i> 
+                                <span>Clients</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="statistics.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                <i class="fas fa-chart-bar mr-2"></i>
+                                <span>Statistics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="finance.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                <i class="fas fa-money-bill mr-2"></i> 
+                                <span>Finance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                <i class="fas fa-question-circle mr-2"></i>
+                                <span>FAQ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="support.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                <i class="fas fa-headset mr-2"></i> 
+                                <span>Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="upgrade-section">
+                        <div class="logo text-center py-3">
+                            <img src="images/boy.png" alt="">
+                        </div>
+                        <div class="logo text-center py-3">
+                            <a href="#" class="d-block" data-tab="logo">
+                                <span>Upgrade</span><br>
+                                <span>your plans<i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-9">
+                <div class="header--wrapper">
+                    <div class="header--title">
+                        <button class="menu-toggle d-md-none"><i class="fas fa-bars"></i></button>
+                        <i class="far fa-calendar-alt"></i>
+                        <span id="current-date"></span>
+                    </div>
+                    <div class="user--info">
+                        <div class="search--box">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <i class="fas fa-bell"></i> 
+                        <span>|</span>
+                        <div class="profile-toggle">
+                            <img src="images/profile.png" alt="" id="profile-toggle">
+                            <div class="profile-dropdown" id="profile-dropdown">
+                                <div class="profile-details">
+                                    <img src="images/profile.png" alt="">
+                                    <p>Tushar Chaudhari</p>
+                                </div>
+                                <div class="profile-actions">
+                                    <a href="#" id="view-profile"><i class="fas fa-user-circle"></i> View Profile</a>
+                                    <a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12 main--content bg-white" id="dynamicContent" >
-        
-        
-            </div>
+                
+                <div class="main--content bg-white" id="dynamicContent">
 
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

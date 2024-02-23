@@ -1,6 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +11,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    display: flex;
+body{
+    display:flex;
 }
 
 .sidebar {
@@ -26,7 +27,6 @@ body {
 }
 
 
-
 .logo {
     height: 80px;
     font-size: 20px;
@@ -34,53 +34,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 16px;
 }
 
 .logo img {
-    height: 50px; 
+    height: 50px;
     width: auto;
 }
 
 .logo p {
-    margin-top: 5px; 
+    margin-top: 5px;
 }
-
 
 
 .menu {
-    height: 88%;
-    padding: 0.5rem; 
-    margin: 0.5rem 0;
-    position: relative;
+    height: calc(100% - 80px); 
+    padding: 0.5rem;
     list-style: none;
-    padding: 0;
 }
-.menu .active {
-    background-color: darkblue;
-    color: white;
-    padding: 0.5rem; 
-    margin: 0.5rem 0; 
-    border-radius: 8px; 
-}
-
 
 .menu li a {
-    color: #333; 
+    color: #333;
     text-decoration: none;
     display: flex;
     align-items: center;
 }
 
-
 .menu a {
-    font-size: 10px; 
+    font-size: 10px;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0; 
-    margin:0;
 }
 
 .menu a span {
@@ -91,41 +75,41 @@ body {
     font-size: 1.2rem;
 }
 
-.logout{
-    margin-top: 30px;
+.menu .active {
+    background-color: darkblue;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
 }
 
-
+/* Upgrade section styles */
 .upgrade-section {
     position: absolute;
-    display: inline;
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align:center;
-    
+    text-align: center;
 }
+
 .upgrade-section .logo img {
     height: 200px;
     width: auto;
     margin-bottom: 50px;
 }
 
-
-
 .upgrade-section a {
-    color:black;
+    color: black;
     text-decoration: none;
 }
 
 .upgrade-section a:hover {
-    color:blue;
+    color: blue;
 }
 
-
+/* Header styles */
 .header--wrapper {
     position: relative;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,21 +118,17 @@ body {
     padding: 20px 16px;
 }
 
-
-
 .header--title {
     color: rgba(113, 99, 186, 255);
-    margin-right: auto; 
-    display: flex; 
-    align-items: center; 
-    gap: 5px; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .user--info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: auto;
     gap: 0.5rem;
 }
 
@@ -193,22 +173,21 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: none;
-    z-index: 9999; /* Increase z-index */
+    z-index: 9999;
     width: 200px;
     height: 200px;
     padding: 20px;
 }
 
-
 .profile-details {
     display: flex;
     border-bottom: 1px solid #ccc;
-
 }
-.profile-details img{
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
+
+.profile-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -233,6 +212,7 @@ body {
 .navbar {
     background-color: transparent;
     border: none;
+    z-index: 0;
 }
 
 .navbar-brand {
@@ -275,6 +255,7 @@ body {
     justify-content: space-between;
     background-color:grey;
     border-radius: 7px;
+    margin-right: auto;
    
 
     
@@ -291,14 +272,17 @@ body {
 .main--content {
     position: relative;
     width: 100%;
-    padding:5px;
+     padding:5px;
     background-color: #f0f0f0; 
-    border-radius: 10px; 
+    border-radius: 10px;
+    z-index: 0;
+ 
 }
 
 .container mt-5{
     justify-content: space-between;
-    display: flex;   
+    display: flex;
+    z-index: 0;   
 }
 .card {
     border: none; 
@@ -306,6 +290,7 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     transition: transform 0.3s ease;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -364,7 +349,7 @@ body {
     font-size: 30px;
 }
 .card-body i {
-    color:green; /* Change icon color */
+    color:green; 
     font-size: 1.2rem;
     margin-left: 20px;
 }
@@ -383,6 +368,7 @@ body {
 
 .nav-tabs .nav-item {
     border: none;
+    align-items: center;
 }
 
 .nav-tabs .nav-link {
@@ -429,4 +415,25 @@ body {
 }
 
 
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px; 
+        width: 250px;
+        height: 100%;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    .sidebar.active {
+        left: 0; 
+    }
+    .menu-toggle {
+        display: block; 
+    }
+    .d-md-block {
+        display: none; 
+    }
+}
 

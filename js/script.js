@@ -76,6 +76,15 @@ $(document).ready(function() {
 });
 
 
+// Toggle sidebar menu click
+$(document).ready(function() {
+    $('.menu-toggle').on('click', function() {
+        $('#sidebarNav').toggleClass('active');
+    });
+});
+
+
+
 //orderstabs
 $(document).ready(function() {
     var containerLinks = $('.nav a');
