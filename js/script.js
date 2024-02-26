@@ -35,13 +35,6 @@ $(document).ready(function() {
     });
 });
 
-//daily&monthly toggle
-$(document).ready(function(){
-    $('.toggle-btn').click(function(){
-        $('.toggle-btn').removeClass('active');
-        $(this).addClass('active');
-    });
-});
 
 //sidebar
 function loadContent(url, containerId) {
@@ -78,25 +71,16 @@ $(document).ready(function() {
 
 // Toggle sidebar menu click
 $(document).ready(function() {
-    $('.menu-toggle').on('click', function() {
-        $('#sidebarNav').toggleClass('active');
+    $(document).on('click', '.menu-toggle', function(event) {
+        event.stopPropagation(); 
+        $('.dropdown-menu').toggle(); 
     });
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('.sidebar-mobile').length) {
+            $('.dropdown-menu').hide();
+        }
+    });
+
 });
 
 
-
-//orderstabs
-$(document).ready(function() {
-    var containerLinks = $('.nav a');
-    containerLinks.each(function() {
-        $(this).on('click', function(event) {
-            event.preventDefault();
-            var href = $(this).attr('href');
-            var targetId = $(this).attr('data-target');
-            loadContent(href, targetId);
-            
-            containerLinks.removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-});

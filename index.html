@@ -11,16 +11,17 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="row">
             <div class="col-lg-3 col-md-4 d-none d-md-block ">
-                <div class="sidebar bg-white border-right" id="sidebarNav">
+                <div class="sidebar bg-white border-right">
                     <div class="logo text-center py-3">
                         <img src="images/logo.png" alt="">
                         <p class="ml-2 mb-0">Untlip</p>
                     </div>
                     <ul class="menu list-unstyled">
                         <li>
-                            <a href="dashboard.html" class="d-block py-2 pl-3"data-target="dynamicContent" >
+                            <a 
+                            href="dashboard.html" class="d-block py-2 pl-3"data-target="dynamicContent" >
                                 <i class="fas fa-tachometer-alt mr-2"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -78,9 +79,76 @@
             </div>
 
             <div class="col-lg-9">
-                <div class="header--wrapper">
+                <div class="header--wrapper ml-auto">
+                    <div class="sidebar-mobile d-md-none">
+                        <a href="#" class="menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></a>
+                        <div class="dropdown-menu transparentbar">
+                            <div class="sidebar bg-white">
+                                <!-- <div class="logo text-center py-3">
+                                    <img src="images/logo.png" alt="">
+                                    <p class="ml-2 mb-0">Untlip</p>
+                                </div> -->
+                                <ul class="menu list-unstyled">
+                                    <li>
+                                        <a 
+                                        href="dashboard.html" class="d-block py-2 pl-3"data-target="dynamicContent" >
+                                            <i class="fas fa-tachometer-alt mr-2"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="orders.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                            <i class="fas fa-shopping-cart mr-2"></i> 
+                                            <span>Orders</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="clients.html" class="d-block py-2 pl-3" data-target="dynamicContent" >
+                                            <i class="fas fa-users mr-2"></i> 
+                                            <span>Clients</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="statistics.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                            <i class="fas fa-chart-bar mr-2"></i>
+                                            <span>Statistics</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="finance.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                            <i class="fas fa-money-bill mr-2"></i> 
+                                            <span>Finance</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                            <i class="fas fa-question-circle mr-2"></i>
+                                            <span>FAQ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="support.html" class="d-block py-2 pl-3" data-target="dynamicContent">
+                                            <i class="fas fa-headset mr-2"></i> 
+                                            <span>Support</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- <div class="upgrade-section">
+                                    <div class="logo text-center py-3">
+                                        <img src="images/boy.png" alt="">
+                                    </div>
+                                    <div class="logo text-center py-3">
+                                        <a href="#" class="d-block" data-tab="logo">
+                                            <span>Upgrade</span><br>
+                                            <span>your plans<i class="fas fa-arrow-right"></i></span>
+                                        </a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                    </div>
                     <div class="header--title">
-                        <button class="menu-toggle d-md-none"><i class="fas fa-bars"></i></button>
                         <i class="far fa-calendar-alt"></i>
                         <span id="current-date"></span>
                     </div>
@@ -115,7 +183,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
