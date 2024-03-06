@@ -6,8 +6,8 @@ $(document).ready(function() {
 
         
         var users = [
-            { id: 1, name: "Tushar Chaudhari", email: "tushar@gmail.com", password: "Tushar123", role: "Admin" },
-            { id: 2, name: "Super Admin", email: "superadmin@example.com", password: "superadmin123", role: "Super Admin" }
+            { id: 1, name: "Tushar Chaudhari", email: "admin@gmail.com", password: "admin123", role: "Admin" },
+            { id: 2, name: "Tushar Chaudhari", email: "superadmin@gmail.com", password: "superadmin123", role: "Super Admin" }
         ];
 
         
