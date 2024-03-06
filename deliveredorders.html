@@ -1,17 +1,21 @@
-<link rel="stylesheet" href="css/style.css">
+<body>
+    <link rel="stylesheet" href="css/style.css">
 
-
-<div class="tab-pane">
-                        
-    <table class="table mt-3">
-        <thead>
-            <tr>
-                <th><i class="fas fa-id-card"></i> Order ID</th>
-                <th><i class="far fa-calendar-alt"></i> Ordered Date</th>
-                <th><i class="fas fa-box"></i> Product Name</th>
-                <th><i class="fas fa-dollar-sign"></i> Product Price</th>
-                <th><i class="fas fa-check-circle"></i> Status</th>
-            </tr>
-        </thead>
-    </table>
-</div>
+    <div class="tab-pane">
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th><i class="fas fa-id-card"></i> Order ID <i class="fas fa-sort"></i></th>
+                    <th><i class="far fa-calendar-alt"></i> Ordered Date <i class="fas fa-sort"></i></th>
+                    <th><i class="fas fa-box"></i> Product Name <i class="fas fa-sort"></i></th>
+                    <th><i class="fas fa-dollar-sign"></i> Product Price <i class="fas fa-sort"></i></th>
+                    <th><i class="fas fa-check-circle"></i> Status <i class="fas fa-sort"></i></th>
+                </tr>
+            </thead>
+            <tbody id="delivered-orders-table">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="js/deliveredorders.js"></script>
+</body>

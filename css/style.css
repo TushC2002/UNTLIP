@@ -322,3 +322,17 @@ body {
         top: 80px; 
     }
 }
+
+@media (max-width: 767px) {
+    /* Adjust modal dialog size and position for mobile screens */
+    #profileModal .modal-dialog {
+        margin: 0;
+        width: 100%;
+        max-width: none;
+    }
+
+    #profileModal .modal-content {
+        border-radius: 0;
+    }
+}
+
